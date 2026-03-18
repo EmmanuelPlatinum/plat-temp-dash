@@ -57,6 +57,51 @@
     --font-mono: 'JetBrains Mono', monospace;
     --font-sans: 'Inter', sans-serif;
   }
+
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 96%;
+
+    --card: 217 33% 17%;
+    --card-foreground: 210 40% 96%;
+
+    --popover: 217 33% 17%;
+    --popover-foreground: 210 40% 96%;
+
+    --primary: 199 89% 48%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 217 33% 20%;
+    --secondary-foreground: 210 40% 96%;
+
+    --muted: 217 33% 20%;
+    --muted-foreground: 215 20% 60%;
+
+    --accent: 217 33% 22%;
+    --accent-foreground: 210 40% 96%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 217 33% 22%;
+    --input: 217 33% 22%;
+    --ring: 199 89% 48%;
+
+    --status-online: 142 71% 45%;
+    --status-offline: 0 84% 60%;
+    --status-warning: 38 92% 50%;
+
+    --hw-accent: 215 20% 60%;
+
+    --sidebar-background: 222 55% 8%;
+    --sidebar-foreground: 210 40% 90%;
+    --sidebar-primary: 199 89% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 217 40% 14%;
+    --sidebar-accent-foreground: 210 40% 96%;
+    --sidebar-border: 217 40% 14%;
+    --sidebar-ring: 199 89% 48%;
+  }
 }
 
 @layer base {
