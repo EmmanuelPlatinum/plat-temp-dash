@@ -5,6 +5,8 @@ import TemperatureHero from "@/components/dashboard/TemperatureHero";
 import TemperatureChart from "@/components/dashboard/TemperatureChart";
 import HardwareCard from "@/components/dashboard/HardwareCard";
 import DataLog from "@/components/dashboard/DataLog";
+import SerialConsole from "@/components/dashboard/SerialConsole";
+import AppFooter from "@/components/shared/AppFooter";
 
 type ConnectionType = "wifi" | "bluetooth" | "ethernet";
 
