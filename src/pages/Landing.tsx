@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import AppFooter from "@/components/shared/AppFooter";
+import {
   Thermometer,
   Wifi,
   Cpu,
@@ -13,6 +13,7 @@ import AppFooter from "@/components/shared/AppFooter";
   Sun,
   Moon,
 } from "lucide-react";
+import AppFooter from "@/components/shared/AppFooter";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "@/hooks/use-theme";
 import HeroHardwareAnimation from "@/components/landing/HeroHardwareAnimation";
