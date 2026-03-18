@@ -26,7 +26,7 @@ const TechStackModal = ({ open, onOpenChange }: TechStackModalProps) => {
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
           <DialogTitle className="font-mono text-base tracking-wider">
-            {"</"}>} Tech Stack
+            {"</>"} Tech Stack
           </DialogTitle>
           <DialogDescription className="text-xs">
             Distribuição aproximada das tecnologias utilizadas neste projeto.
