@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "@/hooks/use-theme";
+import HeroHardwareAnimation from "@/components/landing/HeroHardwareAnimation";
 
 const features = [
   {
