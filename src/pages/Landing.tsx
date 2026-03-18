@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import {
+import AppFooter from "@/components/shared/AppFooter";
   Thermometer,
   Wifi,
   Cpu,
