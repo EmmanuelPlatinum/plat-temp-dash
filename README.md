@@ -112,3 +112,5 @@ npm run build
 ## 📄 License
 
 Academic project — ESP32 Classroom Temperature Monitor v1.0
+
+https://plat-temp-dash.lovable.app
