@@ -13,6 +13,7 @@ import {
   Sun,
   Moon,
 } from "lucide-react";
+import AppFooter from "@/components/shared/AppFooter";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "@/hooks/use-theme";
 import HeroHardwareAnimation from "@/components/landing/HeroHardwareAnimation";
@@ -200,12 +201,7 @@ const Landing = () => {
         </Button>
       </section>
 
-      {/* Footer */}
-      <footer className="border-t py-6 text-center">
-        <p className="text-xs font-mono text-muted-foreground tracking-wider">
-          Sala de Aula Monitor v1.0 — ESP32 WROOM-32
-        </p>
-      </footer>
+      <AppFooter />
     </div>
   );
 };
