@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "@/hooks/use-theme";
+import HeroHardwareAnimation from "@/components/landing/HeroHardwareAnimation";
 
 const features = [
   {
@@ -91,9 +92,13 @@ const Landing = () => {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-primary/5" />
         <div className="relative max-w-5xl mx-auto px-6 py-24 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-mono font-semibold tracking-wider mb-6">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-mono font-semibold tracking-wider mb-8">
             <Cpu size={14} />
             ESP32 WROOM-32
+          </div>
+
+          <div className="mb-10">
+            <HeroHardwareAnimation />
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight mb-6">
