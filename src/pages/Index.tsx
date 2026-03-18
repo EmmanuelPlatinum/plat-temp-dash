@@ -112,7 +112,15 @@ const Index = () => {
 
           {activeTab === "logs" && <DataLog logs={logs} />}
         </main>
+
+        <AppFooter />
       </div>
+
+      <SerialConsole
+        currentTemp={currentTemp}
+        isConnected={isConnected}
+        activeConnection={activeConnection}
+      />
     </div>
   );
 };
