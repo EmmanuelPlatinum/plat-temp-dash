@@ -6,11 +6,11 @@ import TemperatureChart from "@/components/dashboard/TemperatureChart";
 import HardwareCard from "@/components/dashboard/HardwareCard";
 import DataLog from "@/components/dashboard/DataLog";
 import SerialConsole from "@/components/dashboard/SerialConsole";
+import CablingOptimizer from "@/components/dashboard/CablingOptimizer";
 import AppFooter from "@/components/shared/AppFooter";
 
 type ConnectionType = "wifi" | "bluetooth" | "ethernet";
 
-// Simulate 24h of temperature data
 const generateChartData = () => {
   const data = [];
   const now = new Date();
@@ -49,12 +49,12 @@ const Index = () => {
   const [currentTemp, setCurrentTemp] = useState(25.3);
   const [chartData] = useState(generateChartData);
   const [logs] = useState(generateLogs);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const temps = chartData.map((d) => d.temp);
   const minTemp = Math.min(...temps);
   const maxTemp = Math.max(...temps);
 
-  // Simulate live temperature updates
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentTemp((prev) => {
@@ -76,16 +76,22 @@ const Index = () => {
 
   return (
     <div className="flex min-h-screen bg-background">
-      <Sidebar activeTab={activeTab} onTabChange={setActiveTab} />
+      <Sidebar
+        activeTab={activeTab}
+        onTabChange={setActiveTab}
+        open={sidebarOpen}
+        onClose={() => setSidebarOpen(false)}
+      />
 
-      <div className="ml-60 flex-1 flex flex-col">
+      <div className="lg:ml-60 flex-1 flex flex-col min-w-0">
         <ConnectivityHeader
           activeConnection={activeConnection}
           onConnectionChange={handleConnectionChange}
           isConnected={isConnected}
+          onMenuToggle={() => setSidebarOpen(true)}
         />
 
-        <main className="flex-1 p-6 overflow-auto">
+        <main className="flex-1 p-4 md:p-6 overflow-auto">
           {activeTab === "dashboard" && (
             <div className="space-y-6">
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -111,6 +117,8 @@ const Index = () => {
           )}
 
           {activeTab === "logs" && <DataLog logs={logs} />}
+
+          {activeTab === "cabling" && <CablingOptimizer />}
         </main>
 
         <AppFooter />
