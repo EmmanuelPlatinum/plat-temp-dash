@@ -1,5 +1,8 @@
 # ESP32 Classroom Temperature Monitor
 
+Link para ver o Projeto
+https://plat-temp-dash.lovable.app/
+
 > Real-time IoT thermal monitoring system for classroom environments, powered by ESP32 WROOM-32 microcontroller.
 
 ## 🎯 Overview
